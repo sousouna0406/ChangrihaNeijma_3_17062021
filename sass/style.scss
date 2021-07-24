@@ -3,16 +3,14 @@
 @import "utils/fonction";
 @import "utils/placeholder";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 @media screen and (max-width: 480px) {
   * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: "Roboto", sans-serif;
   }
 
   /***********FOOTER************/
@@ -54,11 +52,11 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 35px;
-    .block__titre{
-        width: 100%;
-        padding: 22px;
-        font-size: 30px;
-        margin-top: 20px;
+    .block__titre {
+      width: 100%;
+      padding: 18px;
+      font-size: 25px;
+      margin-top: 20px;
     }
   }
   .carte {
@@ -67,22 +65,22 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    border-radius: 15px;
+    border-radius: 30px;
     background-color: white;
     @include shadow;
     &__image img {
-      height: 220px;
+      height: 200px;
       width: 100%;
       object-fit: cover;
-      border-radius: 15px 15px 0px 0px;
+      border-radius: 30px 30px 0px 0px;
     }
     &__txtbottom {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.1rem;
-      font-size: 22px;
-      color: rgb(85, 83, 83);
+      padding: 1.2rem;
+      font-size: 20px;
+      color: rgb(95, 93, 93);
     }
   }
   .carte a {
@@ -90,22 +88,74 @@
     color: black;
   }
   .carte strong {
-    font-size: 24px;
+    font-size: 22px;
     color: #000;
-    
   }
   .fa-heart:before {
     font-size: 28px;
     color: black;
   }
-  #restaurant{
-      background-color: #f2f2f2;
+  #restaurant {
+    background-color: #f2f2f2;
   }
-  #fonctionnement{
-      @include dimention;
+  #fonctionnement {
+    @include dimention;
   }
-  .menu{
-      
+  .fonctionnement__titre {
+    width: 100%;
+    padding: 18px;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .menu {
+    @include dimention;
+    width: 100%;
 
+    .menu__liste-puce {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    &__choose {
+      border-radius: 30px;
+      @include shadow;
+      width: 85%;
+      font-size: 16px;
+      flex-wrap: wrap;
+      font-weight: bold;
+      color: black;
+      padding: 27px;
+      background-color: #f2f2f2;
+
+      display: flex;
+      
+      justify-content:  space-evenly;
+      
+       
+    }
+  }
+
+  .menu a {
+    @include dimention;
+    width: 100%;
+    margin: 15px;
+
+    text-decoration: none;
+  }
+
+  .fa-store:before {
+    content: "\f54e";
+    font-size: 20px;
+  }
+  .fa-list-ul:before {
+    content: "\f0ca";
+    font-size: 20px;
+  }
+  .fa-mobile-alt:before {
+    content: "\f3cd";
+    font-size: 20px;
   }
 }
