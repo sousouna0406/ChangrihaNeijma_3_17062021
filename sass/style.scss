@@ -3,11 +3,16 @@
 @import "utils/fonction";
 @import "utils/placeholder";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 @media screen and (max-width: 480px) {
   * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
   }
 
   /***********FOOTER************/
@@ -66,7 +71,7 @@
     background-color: white;
     @include shadow;
     &__image img {
-      height: 180px;
+      height: 220px;
       width: 100%;
       object-fit: cover;
       border-radius: 15px 15px 0px 0px;
@@ -76,7 +81,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.1rem;
-      font-size: 20px;
+      font-size: 22px;
       color: rgb(85, 83, 83);
     }
   }
@@ -85,8 +90,9 @@
     color: black;
   }
   .carte strong {
-    font-size: 22px;
+    font-size: 24px;
     color: #000;
+    
   }
   .fa-heart:before {
     font-size: 28px;
