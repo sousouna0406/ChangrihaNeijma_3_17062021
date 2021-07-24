@@ -120,7 +120,7 @@
       margin-bottom: 60px;
     }
     &__choose {
-      border-radius: 30px;
+      border-radius: 20px;
       @include shadow;
       width: 85%;
       font-size: 16px;
@@ -129,12 +129,11 @@
       color: black;
       padding: 27px;
       background-color: #f2f2f2;
-
       display: flex;
       
-      justify-content:  space-evenly;
-      
-       
+      justify-content: space-evenly;
+      position: relative;
+      right: 13px;
     }
   }
 
@@ -142,13 +141,27 @@
     @include dimention;
     width: 100%;
     margin: 15px;
-
+    display: flex;
+    flex-direction: row;
     text-decoration: none;
   }
-
+  .numbers {
+    background-color: #a05bf0;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+  }
+ 
   .fa-store:before {
     content: "\f54e";
     font-size: 20px;
+    position: relative;
+   
   }
   .fa-list-ul:before {
     content: "\f0ca";
@@ -156,6 +169,38 @@
   }
   .fa-mobile-alt:before {
     content: "\f3cd";
-    font-size: 20px;
+    font-size: 22px;
+  }
+  .reservation {
+    @include dimention;
+    background-color: #f2f2f2;
+
+    .reservation__bouton {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 28px;
+      margin-bottom: 50px;
+    .reservation__paragraphe{
+     width: 100%;
+    }
+     
+    }
+  }
+  .reservation p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    
+  }
+  .reservation input {
+    width: auto;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(#ff40dfc4, #7014daa8);
   }
 }
