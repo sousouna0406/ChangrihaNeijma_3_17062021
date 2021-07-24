@@ -62,7 +62,7 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 2px 3px 10px 5px rgba(0, 0, 0, 0.1);
   }
@@ -70,7 +70,7 @@
     height: 200px;
     width: 100%;
     object-fit: cover;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
   }
   .carte__txtbottom {
     display: flex;
@@ -78,7 +78,7 @@
     align-items: center;
     padding: 1.2rem;
     font-size: 20px;
-    color: #5f5d5d;
+    color: rgba(95, 93, 93, 0.719);
   }
 
   .carte a {
@@ -93,7 +93,7 @@
 
   .fa-heart:before {
     font-size: 28px;
-    color: black;
+    color: rgba(95, 93, 93, 0.719);
   }
 
   #restaurant {
@@ -123,7 +123,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
   .menu .menu__liste-puce {
     width: 100%;
@@ -141,7 +140,7 @@
     flex-wrap: wrap;
     font-weight: bold;
     color: black;
-    padding: 27px;
+    padding: 20px;
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-evenly;
@@ -178,44 +177,59 @@
   .fa-store:before {
     content: "";
     font-size: 20px;
-    position: relative;
+    color: rgba(95, 93, 93, 0.719);
   }
 
   .fa-list-ul:before {
     content: "";
     font-size: 20px;
+    color: rgba(95, 93, 93, 0.719);
   }
 
   .fa-mobile-alt:before {
     content: "";
     font-size: 22px;
+    color: rgba(95, 93, 93, 0.719);
   }
 
   .reservation {
-    margin: 0%;
-    width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     background-color: #f2f2f2;
+    padding-bottom: 50px;
+  }
+  .reservation .reservation__titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .reservation .reservation__bouton {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 28px;
-    margin-bottom: 50px;
+    margin-top: 15px;
   }
   .reservation .reservation__bouton .reservation__paragraphe {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .reservation p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    padding-bottom: 18px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    color: rgba(95, 93, 93, 0.719);
+  }
+
+  .reservation h1 {
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    padding-top: 35px;
   }
 
   .reservation input {
@@ -224,8 +238,36 @@
     border-radius: 30px;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 17px;
     background: linear-gradient(#ff40dfc4, #7014daa8);
+  }
+
+  .localisation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #d8d7d793;
+  }
+
+  .textloc {
+    padding: 15px;
+  }
+
+  .entete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 1px 1px 2px rgba(186, 186, 187, 0.5);
+  }
+  .entete .entete__logotop img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    padding: 15px;
+    padding-top: 20px;
   }
 }
 
