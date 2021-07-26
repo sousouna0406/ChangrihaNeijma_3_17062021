@@ -4,10 +4,10 @@
 @import "utils/placeholder";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 @media screen and (max-width: 480px) {
   * {
-    
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -17,15 +17,14 @@
   /***********FOOTER************/
   .footer {
     padding: 1.5rem;
-    margin: 0%;
-    width: 100%;
-    @include flexalign;
+    @include dimention;
+    display: flex;
     flex-direction: column;
     background-color: $footer-background;
 
     .footer__img img {
       width: 110px;
-
+      font-family: $font-logo;
       padding-bottom: 17px;
     }
     .footer__text a {
@@ -46,25 +45,20 @@
     padding-right: 9px;
   }
   .block {
-    margin: 0%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @include dimention;
+    @include flex-column;
     padding-bottom: 35px;
     .block__titre {
       width: 100%;
       padding: 18px;
       font-size: 25px;
       margin-top: 20px;
+      
     }
   }
   .carte {
     margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include flex-column;
     width: 90%;
     border-radius: 20px;
     background-color: white;
@@ -81,7 +75,7 @@
       align-items: center;
       padding: 1.2rem;
       font-size: 20px;
-      color: rgba(95, 93, 93, 0.719);
+      color: $text-light;
     }
   }
   .carte a {
@@ -94,29 +88,28 @@
   }
   .fa-heart:before {
     font-size: 28px;
-    color: rgba(95, 93, 93, 0.719);
+    color: $text-light;
   }
   #restaurant {
-    background-color: #f2f2f2;
+    background-color: $background-color;
   }
   #fonctionnement {
     @include dimention;
+    @include flex-column;
   }
   .fonctionnement__titre {
     width: 100%;
     padding: 18px;
     font-size: 25px;
     margin-top: 20px;
+    
   }
   .menu {
     @include dimention;
 
     .menu__liste-puce {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+     @include flex-column;    
       margin-bottom: 60px;
     }
     &__choose {
@@ -127,63 +120,55 @@
       flex-wrap: wrap;
       font-weight: bold;
       color: black;
-      padding: 20px;
-      background-color: #f2f2f2;
-      display: flex;
-
-      justify-content: space-evenly;
-      position: relative;
-      right: 13px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: $background-color;
+      @include flex-row;
+      justify-content: space-evenly;    
     }
   }
 
   .menu a {
-    @include dimention;
+   @include flex-row;
     width: 100%;
     margin: 15px;
-    display: flex;
-    flex-direction: row;
     text-decoration: none;
   }
   .numbers {
-    background-color: #a05bf0;
+    background-color: $primary;
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-row;
     color: white;
     z-index: 1;
+    position: relative;
+    left: 12px;
   }
 
   .fa-store:before {
     content: "\f54e";
     font-size: 20px;
-    color: rgba(95, 93, 93, 0.719);
+    color: $text-light;
   }
   .fa-list-ul:before {
     content: "\f0ca";
     font-size: 20px;
-    color: rgba(95, 93, 93, 0.719);
+    color: $text-light;
   }
   .fa-mobile-alt:before {
     content: "\f3cd";
     font-size: 22px;
-    color: rgba(95, 93, 93, 0.719);
+    color: $text-light;
   }
   .reservation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    padding-bottom: 50px; 
-    
-    .reservation__titre{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    @include flex-column;
+    background-color: $background-color;
+    padding-bottom: 50px;
+
+    .reservation__titre {
+      @include flex-column;
+      font-family: $font-logo;
     }
 
     .reservation__bouton {
@@ -196,7 +181,6 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        
       }
     }
   }
@@ -205,13 +189,14 @@
     text-align: center;
     font-size: 18px;
     width: 100%;
-    color: rgba(95, 93, 93, 0.719);
+    color: $text-light;
   }
-  .reservation h1{
+  .reservation h1 {
     text-align: center;
     font-size: 25px;
     padding: 15px;
-    padding-top:35px ;
+    padding-top: 35px;
+    
   }
   .reservation input {
     width: auto;
@@ -220,37 +205,29 @@
     border: none;
     color: white;
     font-size: 17px;
-    background: linear-gradient(#ff40dfc4, #7014daa8);
+    background: linear-gradient($secondary, $primary);
   }
-  .localisation{
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       justify-content: center;
-       background-color: #d8d7d793;
-
+  .localisation {
+    @include flex-row;
+    background-color: #d8d7d793;
   }
   .textloc {
     padding: 15px;
   }
-  .entete{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .entete {
+    @include flex-column;
     box-shadow: 4px 1px 1px 2px rgba(186, 186, 187, 0.5);
     position: sticky;
     top: 0;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.89);
-   .entete__logotop img{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 220px;
-     padding: 15px;
-     padding-top: 20px;
+    .entete__logotop img {
      
-   }
+      @include flex-column;
+      width: 220px;
+      padding: 15px;
+      padding-top: 20px;
+      font-family: $font-logo;
+    }
   }
 }
