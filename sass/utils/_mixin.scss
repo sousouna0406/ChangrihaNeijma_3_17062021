@@ -20,3 +20,7 @@
     flex-direction: row;
     align-items: center;
 }
+@mixin texte-light {
+    color: $text-light;
+    font-size: 18px;
+}
