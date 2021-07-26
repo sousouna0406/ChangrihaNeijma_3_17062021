@@ -16,102 +16,79 @@
 
   /***********FOOTER************/
   .footer {
-    padding: 1.5rem;
-    @include dimention;
-    display: flex;
-    flex-direction: column;
-    background-color: $footer-background;
-
-    .footer__img img {
-      width: 110px;
-      font-family: $font-logo;
-      padding-bottom: 17px;
-    }
-    .footer__text a {
-      padding: 4px;
-      display: flex;
-      flex-direction: row;
-      color: $color;
-      text-decoration: none;
-      font-size: 19px;
-    }
+   @include footer;
   }
-  .fa-utensils:before {
-    padding-right: 13px;
-    font-size: 14px;
-  }
-  .fa-hands-helping:before {
-    font-size: 13px;
-    padding-right: 9px;
-  }
-  .block {
-    @include dimention;
-    @include flex-column;
-    padding-bottom: 35px;
-    .block__titre {
-      width: 100%;
-      margin-top: 15px;
-      padding: 20px;
-      font-size: 25px;
-      padding-bottom: 30px;
-    }
-    .block__vert {
-      width: 100%;
-    }
-  }
-  .vert p {
-    display: flex;
-    justify-content: flex-end;
-    background-color: $tertiary;
-    color: rgba(8, 119, 82, 0.836);
-    padding: 7px 13px 7px 13px;
-    border-radius: 3px;
-    font-size: 17px;
-    position: absolute;
-    right: 1rem;
-    flex-wrap: wrap;
-    font-weight: bold;
-    margin: 16px;
+/*********** RESTAURANT**********/
     
+.block {
+  @include dimention;
+  @include flex-column;
+  padding-bottom: 35px;
+  .block__titre {
+    width: 100%;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 25px;
+    padding-bottom: 30px;
   }
-  .carte {
-    margin-bottom: 25px;
-    @include flex-column;
-    width: 90%;
-    border-radius: 20px;
-    background-color: white;
-    @include shadow;
-    &__image img {
-      height: 180px;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 20px 20px 0px 0px;
-    }
+  .block__vert {
+    width: 100%;
+  }
+}
+.vert p {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $tertiary;
+  color: rgba(8, 119, 82, 0.836);
+  padding: 7px 13px 7px 13px;
+  border-radius: 3px;
+  font-size: 17px;
+  position: absolute;
+  right: 1rem;
+  flex-wrap: wrap;
+  font-weight: bold;
+  margin: 16px;
+  
+}
+.carte {
+  margin-bottom: 25px;
+  @include flex-column;
+  width: 90%;
+  border-radius: 20px;
+  background-color: white;
+  @include shadow;
+  &__image img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+  }
 
-    &__txtbottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.2rem;
-      @include texte-light;
-    }
+  &__txtbottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    @include texte-light;
   }
-  .carte a {
-    text-decoration: none;
-    color: black;
-  }
-  .carte strong {
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.719);
-  }
-  .fa-heart:before {
-    font-size: 28px;
-    color: $text-light;
-    
-  }
-  #restaurant {
-    background-color: $background-color;
-  }
+}
+.carte a {
+  text-decoration: none;
+  color: black;
+}
+.carte strong {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.719);
+}
+.fa-heart:before {
+  font-size: 28px;
+  color: $text-light;
+  
+}
+#restaurant {
+  background-color: $background-color;
+}
+/*********** fonctionnement *********/
   #fonctionnement {
     @include dimention;
     @include flex-column;
@@ -215,14 +192,7 @@
     padding-top: 35px;
   }
   .reservation input {
-    width: auto;
-    padding: 15px;
-    border-radius: 30px;
-    border: none;
-    color: white;
-    font-size: 17px;
-    font-weight: 500;
-    background: linear-gradient($secondary, $primary);
+   @include bouton;
   }
   .localisation {
     @include flex-row;
@@ -247,19 +217,8 @@
     color: rgba(0, 0, 0, 0.63);
    
   }
+  /***********HEADER********/
   .entete {
-    @include flex-column;
-    box-shadow: 4px 1px 1px 2px rgba(186, 186, 187, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.89);
-    .entete__logotop img {
-      @include flex-column;
-      width: 220px;
-      padding: 15px;
-      padding-top: 20px;
-      font-family: $font-logo;
-    }
+    @include header;
   }
 }

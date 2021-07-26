@@ -24,3 +24,61 @@
     color: $text-light;
     font-size: 18px;
 }
+@mixin footer {
+
+    padding: 1.5rem;
+    @include dimention;
+    display: flex;
+    flex-direction: column;
+    background-color: $footer-background;
+
+    .footer__img img {
+      width: 110px;
+      font-family: $font-logo;
+      padding-bottom: 17px;
+    }
+    .footer__text a {
+      padding: 4px;
+      display: flex;
+      flex-direction: row;
+      color: $color;
+      text-decoration: none;
+      font-size: 19px;
+    }
+  
+  .fa-utensils:before {
+    padding-right: 13px;
+    font-size: 14px;
+  }
+  .fa-hands-helping:before {
+    font-size: 13px;
+    padding-right: 9px;
+  }
+}
+@mixin header {
+ 
+    @include flex-column;
+    box-shadow: 4px 1px 1px 2px rgba(186, 186, 187, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.89);
+    .entete__logotop img {
+      @include flex-column;
+      width: 220px;
+      padding: 15px;
+      padding-top: 20px;
+      font-family: $font-logo;
+    }
+  }
+@mixin bouton {
+  width: auto;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  background: linear-gradient($secondary, $primary);
+}
+

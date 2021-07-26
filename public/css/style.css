@@ -31,17 +31,16 @@
     text-decoration: none;
     font-size: 19px;
   }
-
-  .fa-utensils:before {
+  .footer .fa-utensils:before {
     padding-right: 13px;
     font-size: 14px;
   }
-
-  .fa-hands-helping:before {
+  .footer .fa-hands-helping:before {
     font-size: 13px;
     padding-right: 9px;
   }
 
+  /*********** RESTAURANT**********/
   .block {
     margin: 0%;
     width: 100%;
@@ -122,6 +121,7 @@
     background-color: #f2f2f2;
   }
 
+  /*********** fonctionnement *********/
   #fonctionnement {
     margin: 0%;
     width: 100%;
@@ -291,6 +291,7 @@
     color: rgba(0, 0, 0, 0.63);
   }
 
+  /***********HEADER********/
   .entete {
     display: flex;
     justify-content: center;
