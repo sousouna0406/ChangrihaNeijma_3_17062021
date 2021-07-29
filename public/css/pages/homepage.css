@@ -1,3 +1,320 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
+/***********FOOTER************/
+.footer {
+  padding: 1.5rem;
+  margin: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #363535;
+}
+.footer .footer__img img {
+  width: 110px;
+  font-family: "Shrikhand", cursive;
+  padding-bottom: 17px;
+}
+.footer .footer__text a {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  color: #fff4f4;
+  text-decoration: none;
+  font-size: 19px;
+}
+.footer .fa-utensils:before {
+  padding-right: 13px;
+  font-size: 14px;
+}
+.footer .fa-hands-helping:before {
+  font-size: 13px;
+  padding-right: 9px;
+}
+
+/*********** RESTAURANT**********/
+.block {
+  margin: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 35px;
+}
+.block .block__titre {
+  width: 100%;
+  margin-top: 15px;
+  padding: 20px;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.block .block__vert {
+  width: 100%;
+}
+
+.vert p {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #99E2D0;
+  color: rgba(8, 119, 82, 0.836);
+  padding: 7px 13px 7px 13px;
+  border-radius: 3px;
+  font-size: 17px;
+  position: absolute;
+  right: 1rem;
+  flex-wrap: wrap;
+  font-weight: bold;
+  margin: 16px;
+}
+
+.carte {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 2px 3px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.carte__image img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.carte__txtbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  color: rgba(95, 93, 93, 0.719);
+  font-size: 18px;
+}
+
+.carte a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.carte strong {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.fa-heart:before {
+  font-size: 28px;
+  color: rgba(95, 93, 93, 0.719);
+}
+
+#restaurant {
+  background-color: #f2f2f2;
+}
+
+/*********** fonctionnement *********/
+#fonctionnement {
+  margin: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fonctionnement__titre {
+  width: 100%;
+  padding: 20px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.menu {
+  margin: 0%;
+  width: 100%;
+}
+.menu .menu__liste-puce {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.menu__choose {
+  border-radius: 20px;
+  box-shadow: 2px 3px 10px 5px rgba(0, 0, 0, 0.1);
+  width: 85%;
+  font-size: 16px;
+  flex-wrap: wrap;
+  font-weight: 200;
+  color: black;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu a {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 15px;
+  text-decoration: none;
+}
+
+.numbers {
+  background-color: #9356DC;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  z-index: 1;
+  position: relative;
+  left: 12px;
+}
+
+.fa-store:before {
+  content: "";
+  font-size: 20px;
+  color: rgba(95, 93, 93, 0.719);
+}
+
+.fa-list-ul:before {
+  content: "";
+  font-size: 20px;
+  color: rgba(95, 93, 93, 0.719);
+}
+
+.fa-mobile-alt:before {
+  content: "";
+  font-size: 22px;
+  color: rgba(95, 93, 93, 0.719);
+}
+
+.reservation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding-bottom: 50px;
+}
+.reservation .reservation__titre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+}
+.reservation .reservation__bouton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.reservation .reservation__bouton .reservation__paragraphe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reservation p {
+  padding-bottom: 18px;
+  text-align: center;
+  color: rgba(95, 93, 93, 0.719);
+  font-size: 18px;
+  width: 100%;
+}
+
+.reservation h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  padding-top: 35px;
+}
+
+.reservation input {
+  width: auto;
+  padding: 17px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: #d8d7d781;
+}
+
+.textloc input {
+  padding: 9px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  outline: none;
+  background-color: #d8d7d71e;
+  border: none;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  text-indent: 20px;
+}
+
+.textloc input::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+/***********HEADER********/
+.entete {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 1px 1px 2px rgba(186, 186, 187, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.89);
+}
+.entete .entete__logotop img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  padding: 15px;
+  padding-top: 20px;
+  font-family: "Shrikhand", cursive;
+}
+.entete #fleche {
+  display: none;
+}
 
 /*# sourceMappingURL=homepage.css.map */
