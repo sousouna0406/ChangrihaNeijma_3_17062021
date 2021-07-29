@@ -25,21 +25,131 @@
   @include bouton;
   padding-left: 3rem;
   padding-right: 3rem;
- 
 }
 .entete {
   @include header(block);
   @include flex-row;
- 
 }
 #fleche a {
   display: flex;
   position: absolute;
   left: 1rem;
-  bottom: 1.5rem; 
+  bottom: 1.3rem;
   color: black;
   text-decoration: none;
 }
-#fleche i{
+#fleche i {
+  font-size: 20px;
+}
+article {
+  @include dimention;
+  background: $background-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.menu {
+  @include dimention;
+  .menu__block {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+  .menu__titre {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.603);
+    font-weight: 100;
+    text-transform: uppercase;
+    
+    padding: 15px;
+    
+    
+  }
+  .menu__carte {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 17px;
+    @include shadow;
+    font-size: 21px;
+    overflow: hidden;
+    
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.column{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 17px;
+  color: $text-light;
+}
+.menu strong{
+  font-weight: 600;
+
+}
+.menu span{
+  font-weight: bold;
+}
+.price{
+  display: flex;
+  align-items: flex-end;
+  margin-left: 20px;
+  font-size: 17px;
+}
+.image-top{
+  @include flex-column;
+  background-color: $background-color;
+}
+.top{
+  position: relative;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  border-top-left-radius:  40px;
+  border-top-right-radius: 40px;
+  background:$background-color;
+ 
+  .top__title{
+    padding-top: 30px;
+     font-family: $font-logo;
+     font-size: 28px;
+  }
+}
+.top i{
+  display: flex;
+  align-items: flex-end;
+  font-size: 28px;
+  color: $text-light;
+  padding-right: 20px;
+  padding-bottom: 12px;
+}
+.image {
+width: 100%;
+  display: flex;
+ 
+  .image__toa img{
+    width: 100%;
+    
+  }
 
 }

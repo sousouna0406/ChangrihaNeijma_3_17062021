@@ -82,7 +82,7 @@
   flex-direction: column;
   align-items: center;
   width: 220px;
-  padding: 15px;
+  padding: 17px;
   padding-top: 20px;
   font-family: "Shrikhand", cursive;
 }
@@ -94,9 +94,130 @@
   display: flex;
   position: absolute;
   left: 1rem;
-  bottom: 1.5rem;
+  bottom: 1.3rem;
   color: black;
   text-decoration: none;
+}
+
+#fleche i {
+  font-size: 20px;
+}
+
+article {
+  margin: 0%;
+  width: 100%;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  margin: 0%;
+  width: 100%;
+}
+.menu .menu__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu .menu__titre {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.603);
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 15px;
+}
+.menu .menu__carte {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px;
+  margin-top: 20px;
+  border-radius: 17px;
+  box-shadow: 2px 3px 10px 5px rgba(0, 0, 0, 0.1);
+  font-size: 21px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 17px;
+  color: rgba(95, 93, 93, 0.719);
+}
+
+.menu strong {
+  font-weight: 600;
+}
+
+.menu span {
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+.image-top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.top {
+  position: relative;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background: #f2f2f2;
+}
+.top .top__title {
+  padding-top: 30px;
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+}
+
+.top i {
+  display: flex;
+  align-items: flex-end;
+  font-size: 28px;
+  color: rgba(95, 93, 93, 0.719);
+  padding-right: 20px;
+  padding-bottom: 12px;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+}
+.image .image__toa img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=menu.css.map */
