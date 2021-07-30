@@ -11,6 +11,7 @@
   font-family: "Roboto", sans-serif;
   margin: 0%;
   padding: 0%;
+  scroll-behavior: smooth;
 }
 .footer {
   @include footer;
@@ -55,22 +56,26 @@ article a {
 }
 .menu {
   @include dimention;
+  
   .menu__block {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    
+     
     padding-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 27px;
   }
   .menu__titre {
+    margin-left: 15px;
+   width: 45px;
+    border-bottom: 3px solid $tertiary;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.603);
     font-weight: 100;
     text-transform: uppercase;
-    width: 100%;
     margin-bottom: 15px;
-    padding-left: 30px;
+    padding-bottom: 4px;
   }
   .menu__carte {
     display: flex;
@@ -79,7 +84,7 @@ article a {
     flex-direction: row;
     background-color: #fff;
     padding: 15px;
-    width: 90%;
+    width: 100%;
     margin: 7px;
     border-radius: 17px;
     @include shadow;
@@ -88,10 +93,7 @@ article a {
   }
 }
 
-.row {
-  display: flex;
-  flex-direction: column;
-}
+
 .column{
   white-space: nowrap;
   text-overflow: ellipsis;

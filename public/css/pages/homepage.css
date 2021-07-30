@@ -6,6 +6,7 @@
   margin: 0%;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /***********FOOTER************/
@@ -246,6 +247,10 @@
   width: 100%;
 }
 
+.reservation a {
+  text-decoration: none;
+}
+
 .reservation h1 {
   text-align: center;
   font-size: 25px;
@@ -254,6 +259,7 @@
 }
 
 .reservation input {
+  cursor: grab;
   width: auto;
   padding: 17px;
   border-radius: 30px;

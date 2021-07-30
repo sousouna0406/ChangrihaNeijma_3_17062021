@@ -5,6 +5,7 @@
   font-family: "Roboto", sans-serif;
   margin: 0%;
   padding: 0%;
+  scroll-behavior: smooth;
 }
 
 .footer {
@@ -49,6 +50,7 @@
 
 .btn input {
   margin-bottom: 77px;
+  cursor: grab;
   width: auto;
   padding: 17px;
   border-radius: 30px;
@@ -124,19 +126,20 @@ article a {
 .menu .menu__block {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 27px;
 }
 .menu .menu__titre {
+  margin-left: 15px;
+  width: 45px;
+  border-bottom: 3px solid #99E2D0;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.603);
   font-weight: 100;
   text-transform: uppercase;
-  width: 100%;
   margin-bottom: 15px;
-  padding-left: 30px;
+  padding-bottom: 4px;
 }
 .menu .menu__carte {
   display: flex;
@@ -145,17 +148,12 @@ article a {
   flex-direction: row;
   background-color: #fff;
   padding: 15px;
-  width: 90%;
+  width: 100%;
   margin: 7px;
   border-radius: 17px;
   box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.1);
   font-size: 19px;
   overflow: hidden;
-}
-
-.row {
-  display: flex;
-  flex-direction: column;
 }
 
 .column {
