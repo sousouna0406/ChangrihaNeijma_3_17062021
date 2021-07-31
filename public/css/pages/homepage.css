@@ -41,6 +41,20 @@
 }
 
 /*********** RESTAURANT**********/
+#restaurant {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+}
+
+.special-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .block {
   margin: 0%;
   width: 100%;
@@ -63,15 +77,14 @@
 
 .vert p {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: #99E2D0;
   color: rgba(8, 119, 82, 0.836);
   padding: 7px 13px 7px 13px;
   border-radius: 3px;
   font-size: 17px;
   position: absolute;
-  right: 1rem;
-  flex-wrap: wrap;
+  right: 1.3rem;
   font-weight: bold;
   margin: 13px;
 }
