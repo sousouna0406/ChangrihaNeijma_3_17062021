@@ -1,0 +1,26 @@
+@media screen and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    .image{
+        height: 12rem;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 980px){
+    body{
+        width:100%;
+    }
+    .image{
+        height: 22rem;
+    }
+}
+@media screen and (min-width: 980px){
+    body{
+        width: 100%;
+    }
+    .article{
+        flex-direction: row;
+    }
+}
+
+/*# sourceMappingURL=responsive_menu.css.map */
