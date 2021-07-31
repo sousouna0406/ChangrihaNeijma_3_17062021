@@ -48,7 +48,6 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 article a {
   text-decoration: none;
@@ -56,19 +55,18 @@ article a {
 }
 .menu {
   @include dimention;
-  
+
   .menu__block {
     display: flex;
     flex-direction: column;
-    
-     
+
     padding-bottom: 30px;
     margin-left: 10px;
     margin-right: 27px;
   }
   .menu__titre {
     margin-left: 15px;
-   width: 45px;
+    width: 45px;
     border-bottom: 3px solid $tertiary;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.603);
@@ -93,8 +91,7 @@ article a {
   }
 }
 
-
-.column{
+.column {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -107,26 +104,24 @@ article a {
   font-size: 16px;
   color: $text-light;
 }
-.menu strong{
+.menu strong {
   font-weight: 600;
-
 }
-.menu span{
+.menu span {
   position: relative;
   top: 0.8rem;
   font-weight: bold;
 }
-.price{
+.price {
   display: flex;
   align-items: flex-end;
   margin-left: 20px;
   font-size: 17px;
 }
-.image-top{
+.image-top {
   background-color: $background-color;
-
 }
-.top{
+.top {
   position: relative;
   bottom: 2.1rem;
   width: 100%;
@@ -134,18 +129,18 @@ article a {
   flex-direction: row;
   justify-content: space-between;
   padding: 15px;
-  border-top-left-radius:  40px;
+  border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  background:$background-color;
- 
-  .top__title{
+  background: $background-color;
+
+  .top__title {
     padding-top: 30px;
-     font-family: $font-logo;
-     font-size: 28px;
-     padding-left: 15px;
+    font-family: $font-logo;
+    font-size: 28px;
+    padding-left: 15px;
   }
 }
-.top i{
+.top i {
   display: flex;
   align-items: flex-end;
   font-size: 28px;
@@ -157,10 +152,9 @@ article a {
   overflow: hidden;
   height: 15rem;
   display: flex;
-  .image__toa img{
-   display: flex;
-   width: 100%;
+  .image__toa img {
+    display: flex;
+    width: 100%;
     object-fit: cover;
   }
-
 }

@@ -6,26 +6,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
 
-  * {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    scroll-behavior: smooth;
-  }
-
-  /***********FOOTER************/
-  .footer {
-   @include footer;
-  }
+/***********FOOTER************/
+.footer {
+  @include footer;
+}
 /*********** RESTAURANT**********/
-#restaurant{
+#restaurant {
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
 }
-.special-div{
+.special-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +58,6 @@
   right: 1.3rem;
   font-weight: bold;
   margin: 13px;
-  
 }
 .carte {
   margin-bottom: 25px;
@@ -86,7 +84,7 @@
 .carte a {
   text-decoration: none;
   color: black;
-  width: 100%; 
+  width: 100%;
 }
 
 .carte strong {
@@ -96,148 +94,145 @@
 .fa-heart:before {
   font-size: 28px;
   color: $text-light;
-  
 }
 #restaurant {
   background-color: $background-color;
 }
 /*********** fonctionnement *********/
-  #fonctionnement {
-    @include dimention;
-    @include flex-column;
-  }
-  .fonctionnement__titre {
+#fonctionnement {
+  @include dimention;
+  @include flex-column;
+}
+.fonctionnement__titre {
+  width: 100%;
+  padding: 20px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.menu {
+  @include dimention;
+
+  .menu__liste-puce {
     width: 100%;
-    padding: 20px;
-    font-size: 25px;
-    margin-top: 20px;
-  }
-  .menu {
-    @include dimention;
-
-    .menu__liste-puce {
-      width: 100%;
-      @include flex-column;
-      margin-bottom: 60px;
-    }
-    &__choose {
-      border-radius: 20px;
-      @include shadow;
-      width: 85%;
-      font-size: 16px;
-      flex-wrap: wrap;
-      font-weight: 200;
-      color: black;
-      padding-top: 23px;
-      padding-bottom: 23px;
-      background-color: $background-color;
-      @include flex-row;
-      justify-content: space-evenly;
-    }
-  }
-
-  .menu a {
-    @include flex-row;
-    width: 100%;
-    margin: 15px;
-    text-decoration: none;
-  }
-  .numbers {
-    background-color: $primary;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    @include flex-row;
-    color: white;
-    z-index: 1;
-    position: relative;
-    left: 12px;
-  }
-
-  .fa-store:before {
-    content: "\f54e";
-    font-size: 20px;
-    color: $text-light;
-  }
-  .fa-list-ul:before {
-    content: "\f0ca";
-    font-size: 20px;
-    color: $text-light;
-  }
-  .fa-mobile-alt:before {
-    content: "\f3cd";
-    font-size: 22px;
-    color: $text-light;
-  }
-  .reservation {
     @include flex-column;
+    margin-bottom: 60px;
+    padding-right: 15px;
+  }
+  &__choose {
+    border-radius: 20px;
+    @include shadow;
+    width: 85%;
+    font-size: 16px;
+    flex-wrap: wrap;
+    font-weight: 200;
+    color: black;
+    padding-top: 23px;
+    padding-bottom: 23px;
     background-color: $background-color;
-    padding-bottom: 50px;
+    @include flex-row;
+    justify-content: space-evenly;
+  }
+}
 
-    .reservation__titre {
-      @include flex-column;
-      font-family: $font-logo;
-    }
+.menu a {
+  @include flex-row;
+  width: 100%;
+  margin: 15px;
+  text-decoration: none;
+}
+.numbers {
+  background-color: $primary;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  @include flex-row;
+  color: white;
+  z-index: 1;
+  position: relative;
+  left: 12px;
+}
 
-    .reservation__bouton {
+.fa-store:before {
+  content: "\f54e";
+  font-size: 20px;
+  color: $text-light;
+  padding-left: 13px;
+}
+.fa-list-ul:before {
+  content: "\f0ca";
+  font-size: 20px;
+  color: $text-light;
+  padding-left: 13px;
+}
+.fa-mobile-alt:before {
+  content: "\f3cd";
+  font-size: 22px;
+  color: $text-light;
+  padding-left: 13px;
+}
+.reservation {
+  @include flex-column;
+  background-color: $background-color;
+  padding-bottom: 50px;
+
+  .reservation__titre {
+    @include flex-column;
+    font-family: $font-logo;
+  }
+
+  .reservation__bouton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+    .reservation__paragraphe {
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-top: 15px;
-      
-
-      .reservation__paragraphe {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
     }
   }
-  .reservation p {
-    padding-bottom: 18px;
-    text-align: center;
-    @include texte-light;
-    width: 100%;
-  }
-  .reservation a{
-       text-decoration: none;
-       
-  }
-  .reservation h1 {
-    text-align: center;
-    font-size: 25px;
-    padding: 15px;
-    padding-top: 35px;
-  }
-  .reservation input {
-   @include bouton;
-   
-  }
-  .localisation {
-    @include flex-row;
-    background-color: #d8d7d781;
-  }
-  .textloc input {
-    padding:9px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    outline: none;
-    background-color: #d8d7d71e;
-    border: none;
-    display: flex;
-   justify-content: center;
-   font-size: 15px; 
-   text-indent:20px;
-    
-  }
-  .textloc input::placeholder {  
-    font-size: 15px; 
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.63);
-   
-  }
-  /***********HEADER********/
-  .entete {
-    @include header(none);
-  }
-
+}
+.reservation p {
+  padding-bottom: 18px;
+  text-align: center;
+  @include texte-light;
+  width: 100%;
+}
+.reservation a {
+  text-decoration: none;
+}
+.reservation h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  padding-top: 35px;
+}
+.reservation input {
+  @include bouton;
+}
+.localisation {
+  @include flex-row;
+  background-color: #d8d7d781;
+}
+.textloc input {
+  padding: 9px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  outline: none;
+  background-color: #d8d7d71e;
+  border: none;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  text-indent: 20px;
+}
+.textloc input::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.63);
+}
+/***********HEADER********/
+.entete {
+  @include header(none);
+}

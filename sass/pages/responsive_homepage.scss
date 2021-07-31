@@ -1,76 +1,125 @@
 @import "../utils/variable";
 
-@media screen and (max-width: 480px){
-    body{
-        width: 100%;
-    }
-
+@media screen and (max-width: 680px) {
+  body {
+    width: 100%;
+  }
 }
-@media screen and (min-width: 480px) and (max-width: 680px){
-    body{
-        width:100%;
-    }
+@media screen and (min-width: 680px) and (max-width: 820px) {
+  body {
+    width: 100%;
+  }
+  .reservation_fonctionnement {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-bottom: 4px double #a3a2a2;
+    border-top: 4px double $secondary;
+  }
+  #fonctionnement {
+    border-left: 3px dotted $tertiary;
+    width: 50%;
 
-  
-   
-}
-@media screen and (min-width: 680px){
-    body{
-        width: 100%;
+    .fonctionnement__titre {
+      justify-content: center;
+      width: 52%;
     }
-    .reservation_fonctionnement{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        border-bottom: 4px double #a3a2a2;
-        border-top: 4px double #a3a2a2;
-       
+    .menu__liste-puce {
+      padding-right: 0%;
     }
-    #fonctionnement{
-        border-left: 3px dotted #a3a2a2;
-       width: 50%;
-       
-       .fonctionnement__titre {
-          justify-content: center;
-          width: 37%;
-       }
-       .menu__choose{
-           width: 70%;
-          
-       }
+    .menu__choose {
+      width: 70%;
     }
-    .reservation{
-        width: 50%;
-        justify-content: flex-start;
-       background: #fff;
-    }
-    .reservation p{
-        margin-bottom: 35px;
-    }
-    .reservation h1{
-        margin-bottom: 45px;
-    }
+  }
+  .reservation {
+    width: 50%;
+    justify-content: flex-start;
+    background: #fff;
+  }
+  .reservation p {
+    margin-bottom: 35px;
+  }
+  .reservation h1 {
+    margin-bottom: 45px;
+  }
 
-   .special-div{
+  .special-div {
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     width: 100%;
-   }
-   .carte {
+  }
+  .carte {
     margin: 20px;
     .carte__image img {
-        height: 215px;
+      height: 215px;
     }
+  }
+  .block {
+    width: 90%;
+  }
+  .vert {
+    position: relative;
+    left: 1rem;
+  }
+}
+@media screen and (min-width: 820px) {
+  body {
+    width: 100%;
+  }
+  .reservation_fonctionnement {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-bottom: 4px double #a3a2a2;
+    border-top: 4px double $secondary;
+  }
+  #fonctionnement {
+    border-left: 3px dotted $tertiary;
+    width: 50%;
 
-   }
-   .block{
-       width: 90%;
-   }
-   .vert{
-       position: relative;
-       left: 1rem;
-       
-   }
+    .fonctionnement__titre {
+      justify-content: center;
+      width: 33%;
+    }
+    .menu__liste-puce {
+      padding-right: 0%;
+    }
+    .menu__choose {
+      width: 70%;
+    }
+  }
+  .reservation {
+    width: 50%;
+    justify-content: flex-start;
+    background: #fff;
+  }
+  .reservation p {
+    margin-bottom: 35px;
+  }
+  .reservation h1 {
+    margin-bottom: 45px;
+  }
+
+  .special-div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .carte {
+    margin: 20px;
+    .carte__image img {
+      height: 215px;
+    }
+  }
+  .block {
+    width: 90%;
+  }
+  .vert {
+    position: relative;
+    left: 1rem;
+  }
 }
