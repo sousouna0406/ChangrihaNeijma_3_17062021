@@ -42,7 +42,7 @@
 #fleche i {
   font-size: 20px;
 }
-.main {
+main {
   @include dimention;
   background: $background-color;
   display: flex;
