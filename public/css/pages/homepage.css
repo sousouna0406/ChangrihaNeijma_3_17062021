@@ -202,7 +202,7 @@
   font-size: 20px;
   color: rgba(95, 93, 93, 0.719);
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 
 .fa-list-ul:before {
@@ -210,7 +210,7 @@
   font-size: 20px;
   color: rgba(95, 93, 93, 0.719);
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 
 .fa-mobile-alt:before {
@@ -218,7 +218,7 @@
   font-size: 22px;
   color: rgba(95, 93, 93, 0.719);
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 
 .reservation {

@@ -157,21 +157,21 @@
   font-size: 20px;
   color: $text-light;
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 .fa-list-ul:before {
   content: "\f0ca";
   font-size: 20px;
   color: $text-light;
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 .fa-mobile-alt:before {
   content: "\f3cd";
   font-size: 22px;
   color: $text-light;
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 .reservation {
   @include flex-column;
