@@ -19,62 +19,65 @@
       </div>
     </header>
 
-    <section class="localisation">
+    <div class="localisation">
       <div class="icone"><i class="fas fa-map-marker-alt"></i></div>
       <div class="textloc">
         <input type="text" placeholder="Paris, Belleville" />
       </div>
-    </section>
-    <section class="reservation_fonctionnement">
-      <section class="reservation">
-        <div class="reservation__title">
-          <h1>
-            Réservez le menu qui<br />
-            vous convient
-          </h1>
-        </div>
-        <div class="reservation__paragraphe">
-          <p>
-            Découvrez des restaurants d'exception,<br />
-            séléctionnés par nos soins.
-          </p>
-        </div>
-        <a href="#restaurant" class="reservation__bouton">
-          <input type="button" value="Explorer nos restaurants" />
-        </a>
-      </section>
-
-      <section id="fonctionnement">
-        <h2 class="fonctionnement__titre">Fonctionnement</h2>
-        <nav class="menu">
-          <ul class="menu__liste-puce">
-            <a href="#"
-              ><span class="numbers">1</span>
-              <li class="menu__choose">
-                <i class="fas fa-mobile-alt"></i
-                ><strong>Choisissez un restaurant</strong>
-              </li></a
-            >
-            <a href="#"
-              ><span class="numbers">2</span>
-              <li class="menu__choose">
-                <i class="fas fa-list-ul"></i
-                ><strong>Composez votre menu</strong>
-              </li></a
-            >
-            <a href="#"
-              ><span class="numbers">3</span>
-              <li class="menu__choose">
-                <i class="fas fa-store"></i
-                ><strong>Dégustez au restaurant</strong>
-              </li></a
-            >
-          </ul>
-        </nav>
-      </section>
-    </section>
+    </div>
     <main>
-      <section id="restaurant">
+      <div class="reservation_fonctionnement">
+        <div class="reservation">
+          <div class="reservation__title">
+            <h1>
+              Réservez le menu qui<br />
+              vous convient
+            </h1>
+          </div>
+          <div class="reservation__paragraphe">
+            <p>
+              Découvrez des restaurants d'exception,<br />
+              séléctionnés par nos soins.
+            </p>
+          </div>
+           <div class="btn">
+            
+            <input type="button" value="Explorer nos restaurants" />
+          </div>
+        </div>
+
+        <div id="fonctionnement">
+          <h2 class="fonctionnement__titre">Fonctionnement</h2>
+          <div class="fonctionnement__menu">
+            <div class="numbers">
+              <span>1</span>
+            </div>
+            <div class="map">
+              <i class="fas fa-mobile-alt"></i
+              ><strong>Choisissez un restaurant</strong>
+            </div>
+          </div>
+          <div class="fonctionnement__menu">
+            <div class="numbers">
+              <span>2</span>
+            </div>
+            <div class="map">
+              <i class="fas fa-list-ul"></i>
+              <strong>Composez votre menu</strong>
+            </div>
+          </div>
+          <div class="fonctionnement__menu">
+            <div class="numbers">
+              <span>3</span>
+            </div>
+            <div class="map">
+              <i class="fas fa-store"></i
+              ><strong>Dégustez au restaurant</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="restaurant">  
         <div class="block">
           <h2 class="block__titre">Restaurants</h2>
           <div class="special-div">

@@ -19,11 +19,13 @@
   #fonctionnement {
     border-left: 3px dotted $tertiary;
     width: 50%;
-
-    .fonctionnement__titre {
-      justify-content: center;
-      width: 52%;
-    }
+   padding-bottom: 0%;
+   .fonctionnement__titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+  }
     .menu__liste-puce {
       padding-right: 0%;
     }
@@ -78,16 +80,18 @@
   #fonctionnement {
     border-left: 3px dotted $tertiary;
     width: 50%;
-
+    padding-bottom: 0%;
     .fonctionnement__titre {
+      display: flex;
+      align-items: center;
       justify-content: center;
-      width: 33%;
+      width: 100%
     }
     .menu__liste-puce {
       padding-right: 0%;
     }
     .menu__choose {
-      width: 70%;
+      width: 80%;
     }
   }
   .reservation {

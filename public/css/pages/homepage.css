@@ -143,90 +143,82 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-right: 10px;
+  padding-bottom: 40px;
 }
-
-.fonctionnement__titre {
+#fonctionnement .fonctionnement__titre {
   width: 100%;
   padding: 20px;
   font-size: 25px;
   margin-top: 20px;
+  padding-bottom: 30px;
 }
-
-.menu {
+#fonctionnement .fonctionnement__menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
   margin: 0%;
   width: 100%;
-}
-.menu .menu__liste-puce {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 60px;
-  padding-right: 15px;
-}
-.menu__choose {
-  border-radius: 20px;
-  box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.1);
-  width: 85%;
-  font-size: 16px;
-  flex-wrap: wrap;
-  font-weight: 200;
-  color: black;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  background-color: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  margin-bottom: 34px;
 }
 
-.menu a {
+.map {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  margin: 0%;
   width: 100%;
-  margin: 15px;
-  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  font-size: 16px;
+  font-weight: 200;
+  color: black;
+  background-color: #f2f2f2;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  cursor: grab;
 }
 
 .numbers {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
   background-color: #9356DC;
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
   color: white;
-  z-index: 1;
   position: relative;
-  left: 12px;
+  left: 15px;
 }
 
 .fa-store:before {
   content: "";
   font-size: 20px;
   color: rgba(95, 93, 93, 0.719);
-  padding-left: 13px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .fa-list-ul:before {
   content: "";
   font-size: 20px;
   color: rgba(95, 93, 93, 0.719);
-  padding-left: 13px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .fa-mobile-alt:before {
   content: "";
   font-size: 22px;
   color: rgba(95, 93, 93, 0.719);
-  padding-left: 13px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .reservation {

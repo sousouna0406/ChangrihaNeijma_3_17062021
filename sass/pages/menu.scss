@@ -42,14 +42,14 @@
 #fleche i {
   font-size: 20px;
 }
-article {
+.main {
   @include dimention;
   background: $background-color;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-article a {
+main a {
   text-decoration: none;
   color: black;
 }

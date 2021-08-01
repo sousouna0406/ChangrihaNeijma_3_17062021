@@ -19,10 +19,13 @@
   #fonctionnement {
     border-left: 3px dotted #99E2D0;
     width: 50%;
+    padding-bottom: 0%;
   }
   #fonctionnement .fonctionnement__titre {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 52%;
+    width: 100%;
   }
   #fonctionnement .menu__liste-puce {
     padding-right: 0%;
@@ -85,16 +88,19 @@
   #fonctionnement {
     border-left: 3px dotted #99E2D0;
     width: 50%;
+    padding-bottom: 0%;
   }
   #fonctionnement .fonctionnement__titre {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 33%;
+    width: 100%;
   }
   #fonctionnement .menu__liste-puce {
     padding-right: 0%;
   }
   #fonctionnement .menu__choose {
-    width: 70%;
+    width: 80%;
   }
 
   .reservation {

@@ -102,73 +102,76 @@
 #fonctionnement {
   @include dimention;
   @include flex-column;
-}
-.fonctionnement__titre {
-  width: 100%;
-  padding: 20px;
-  font-size: 25px;
-  margin-top: 20px;
-}
-.menu {
-  @include dimention;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  
 
-  .menu__liste-puce {
+  .fonctionnement__titre {
     width: 100%;
-    @include flex-column;
-    margin-bottom: 60px;
-    padding-right: 15px;
+    padding: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    padding-bottom: 30px; 
+   
   }
-  &__choose {
-    border-radius: 20px;
-    @include shadow;
-    width: 85%;
-    font-size: 16px;
-    flex-wrap: wrap;
-    font-weight: 200;
-    color: black;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    background-color: $background-color;
+  .fonctionnement__menu {
     @include flex-row;
-    justify-content: space-evenly;
+    @include dimention;
+
+    margin-bottom: 34px;
   }
 }
 
-.menu a {
-  @include flex-row;
-  width: 100%;
-  margin: 15px;
-  text-decoration: none;
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include dimention;
+  border-radius: 20px;
+  @include shadow;
+  width: 80%;
+  font-size: 16px;
+  font-weight: 200;
+  color: black;
+  background-color: $background-color;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  cursor: grab;
 }
+
 .numbers {
+  @include flex-row;
   background-color: $primary;
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  @include flex-row;
   color: white;
-  z-index: 1;
   position: relative;
-  left: 12px;
+  left: 15px;
 }
 
 .fa-store:before {
   content: "\f54e";
   font-size: 20px;
   color: $text-light;
-  padding-left: 13px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .fa-list-ul:before {
   content: "\f0ca";
   font-size: 20px;
   color: $text-light;
-  padding-left: 13px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .fa-mobile-alt:before {
   content: "\f3cd";
   font-size: 22px;
   color: $text-light;
-  padding-left: 13px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .reservation {
   @include flex-column;
