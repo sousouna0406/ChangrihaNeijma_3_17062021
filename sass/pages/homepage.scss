@@ -183,7 +183,7 @@
     font-family: $font-logo;
   }
 
-  .reservation__bouton {
+  .reservation__btn {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -211,7 +211,7 @@
   padding: 15px;
   padding-top: 35px;
 }
-.reservation input {
+.reservation a {
   @include bouton;
 }
 .localisation {

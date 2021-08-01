@@ -236,13 +236,13 @@
   align-items: center;
   font-family: "Shrikhand", cursive;
 }
-.reservation .reservation__bouton {
+.reservation .reservation__btn {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
-.reservation .reservation__bouton .reservation__paragraphe {
+.reservation .reservation__btn .reservation__paragraphe {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -267,7 +267,7 @@
   padding-top: 35px;
 }
 
-.reservation input {
+.reservation a {
   cursor: grab;
   width: auto;
   padding: 17px;
