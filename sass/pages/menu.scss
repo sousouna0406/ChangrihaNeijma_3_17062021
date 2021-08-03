@@ -12,6 +12,7 @@
   margin: 0%;
   padding: 0%;
   scroll-behavior: smooth;
+  
 }
 .footer {
   @include footer;
@@ -48,11 +49,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 main a {
   text-decoration: none;
   color: black;
+
 }
+
 .menu {
   @include dimention;
 
@@ -157,4 +161,46 @@ main a {
     width: 100%;
     object-fit: cover;
   }
+}
+.top, .menu__block, .btn, footer{
+  animation: block 1.2s ease-in forwards;
+
+}
+@keyframes block{
+from{
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+ to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu__carte:nth-of-type(1){
+animation: carte 0.5s both ease-in-out;
+animation-delay: 0.1s;
+}
+.menu__carte:nth-of-type(2){
+  animation: carte 0.5s both ease-in-out;
+  animation-delay: 0.6s;
+  }
+  .menu__carte:nth-of-type(3){
+    animation: carte 0.5s both ease-in-out;
+    animation-delay: 1s;
+    }  
+    .menu__carte:nth-of-type(4){
+      animation: carte 0.5s both ease-in-out;
+      animation-delay: 1.5s;
+      }  
+@keyframes carte {
+  0%{
+    opacity: 0;
+    transform: translateY(-6px) ;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) ;
+  }
+
 }
