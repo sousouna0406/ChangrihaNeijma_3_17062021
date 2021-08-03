@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
@@ -147,19 +148,27 @@ main a {
   justify-content: space-between;
   flex-direction: row;
   background-color: #fff;
-  padding: 15px;
   width: 100%;
   margin: 7px;
   border-radius: 17px;
   box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.1);
   font-size: 19px;
   overflow: hidden;
+  cursor: grab;
+}
+
+.space {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .column {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding: 15px;
 }
 
 .menu p {
@@ -176,8 +185,6 @@ main a {
 }
 
 .menu span {
-  position: relative;
-  top: 0.8rem;
   font-weight: bold;
 }
 
@@ -186,6 +193,7 @@ main a {
   align-items: flex-end;
   margin-left: 20px;
   font-size: 17px;
+  margin: 15px;
 }
 
 .image-top {
@@ -231,14 +239,17 @@ main a {
   object-fit: cover;
 }
 
-.top, .menu__block, .btn, footer {
-  animation: block 1.2s ease-in forwards;
+.top,
+.menu__block,
+.btn,
+footer {
+  animation: block 1.5s ease-in forwards;
 }
 
 @keyframes block {
   from {
     opacity: 1;
-    transform: translateY(-30px);
+    transform: translateY(-15px);
   }
   to {
     opacity: 1;
@@ -247,32 +258,83 @@ main a {
 }
 .menu__carte:nth-of-type(1) {
   animation: carte 0.5s both ease-in-out;
-  animation-delay: 0.1s;
+  animation-delay: 0.5s;
 }
 
 .menu__carte:nth-of-type(2) {
   animation: carte 0.5s both ease-in-out;
-  animation-delay: 0.6s;
+  animation-delay: 0.9s;
 }
 
 .menu__carte:nth-of-type(3) {
   animation: carte 0.5s both ease-in-out;
-  animation-delay: 1s;
+  animation-delay: 1.3s;
 }
 
 .menu__carte:nth-of-type(4) {
   animation: carte 0.5s both ease-in-out;
-  animation-delay: 1.5s;
+  animation-delay: 1.7s;
 }
 
 @keyframes carte {
   0% {
     opacity: 0;
-    transform: translateY(-6px);
+    transform: translateY(10px);
   }
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+.check {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 25px;
+}
+
+.fa-check-circle:before {
+  content: "";
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.menu__carte:hover .check {
+  display: block;
+  content: "";
+  animation: check 1s ease-in-out;
+}
+
+.menu__carte:hover .price {
+  animation: check 1s ease-in-out;
+}
+
+@keyframes check {
+  from {
+    transform: translateX(90px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.menu__carte:hover .fa-check-circle {
+  content: "";
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  animation: rotate 1s cubic-bezier(0.4, 0, 1, 1);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
