@@ -6,42 +6,6 @@
   .image {
     height: 12rem;
   }
-  .menu__carte:hover .check {
-    display: none;
-    content: "";
-    animation: check 200ms ease-in-out;
-  }
-  
-  .menu__carte:hover .price {
-    
-    animation: check 200ms ease-in-out;
-  }
-  
-  .menu__carte:hover .fa-check-circle {
-    
-    content: "";
-    font-size: 25px;
-    color: #fff;
-    font-weight: bold;
-    animation: rotate 0ms cubic-bezier(0.4, 0, 1, 1);
-  }
-  .menu__carte:active .check {
-    display: block;
-    content: "";
-    animation: check 0ms ease-in-out forwards;
-  }
-  
-  .menu__carte:active .price {
-    animation: check 0ms ease-in-out forwards;
-  }
-  
-  .menu__carte:active .fa-check-circle {
-    content: "";
-    font-size: 25px;
-    color: #fff;
-    font-weight: bold;
-    animation: rotate 300ms cubic-bezier(0.4, 0, 1, 1);
-  }
   
 }
 @media screen and (min-width: 480px) and (max-width: 820px) {
