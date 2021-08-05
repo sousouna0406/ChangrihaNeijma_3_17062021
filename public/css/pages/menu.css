@@ -309,11 +309,11 @@ footer {
 .menu__carte:hover .check {
   display: block;
   content: "";
-  animation: check 600ms ease-in-out;
+  animation: check 400ms ease-in-out;
 }
 
 .menu__carte:hover .price {
-  animation: check 600ms ease-in-out;
+  animation: check 350ms ease-in-out;
 }
 
 @keyframes check {
@@ -340,6 +340,5 @@ footer {
     transform: rotate(360deg);
   }
 }
-
 
 /*# sourceMappingURL=menu.css.map */
