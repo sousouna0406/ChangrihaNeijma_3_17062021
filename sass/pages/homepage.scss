@@ -2,7 +2,7 @@
 @import "../utils/mixin";
 @import "../utils/fonction";
 @import "../utils/placeholder";
-
+@import "../components/animation";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
@@ -90,10 +90,30 @@
   font-size: 20px;
   color: rgba(0, 0, 0, 0.719);
 }
-.fa-heart:before {
+
+.coeur-plein  {
+  display: none;
+  align-items: flex-end;
+  font-size: 28px;
+  margin: 7px;
+  background-image: linear-gradient(to top, $primary, $primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.coeur-vide {
+  display: flex;
+  align-items: flex-end;
   font-size: 28px;
   color: $text-light;
+  margin: 7px;
+
+  
 }
+
+
 #restaurant {
   background-color: $background-color;
 }

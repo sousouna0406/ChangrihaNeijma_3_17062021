@@ -150,14 +150,28 @@ main {
     padding-left: 15px;
   }
 }
-.top i {
+.coeur-vide {
   display: flex;
   align-items: flex-end;
   font-size: 28px;
   color: $text-light;
-  padding-right: 20px;
-  padding-bottom: 9px;
+  margin: 7px;
+  padding-right: 10px;
 }
+.coeur-plein {
+  display: none;
+  align-items: flex-end;
+  font-size: 28px;
+  margin: 7px;
+  padding-right: 10px;
+  background-image: linear-gradient(to top, $primary, $primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .image {
   overflow: hidden;
   height: 15rem;
