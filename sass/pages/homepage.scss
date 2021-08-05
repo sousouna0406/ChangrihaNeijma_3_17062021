@@ -92,11 +92,13 @@
 }
 
 .coeur-plein  {
+
+
   display: none;
   align-items: flex-end;
-  font-size: 28px;
+  font-size: 26.6px;
   margin: 7px;
-  background-image: linear-gradient(to top, $primary, $primary, $secondary);
+  background-image: linear-gradient(to top, $secondary, $secondary, $primary);
   -webkit-background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;

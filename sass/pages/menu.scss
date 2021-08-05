@@ -157,6 +157,7 @@ main {
   color: $text-light;
   margin: 7px;
   padding-right: 10px;
+  cursor: pointer;
 }
 .coeur-plein {
   display: none;
@@ -164,12 +165,13 @@ main {
   font-size: 28px;
   margin: 7px;
   padding-right: 10px;
-  background-image: linear-gradient(to top, $primary, $primary, $secondary);
+  background-image: linear-gradient(to top, $secondary, $secondary, $primary);
   -webkit-background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
+  cursor: pointer;
 }
 
 .image {
