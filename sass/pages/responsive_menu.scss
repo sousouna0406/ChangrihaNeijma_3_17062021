@@ -1,4 +1,17 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 350px) {
+  body {
+    width: 100%;
+  }
+
+  .image {
+    height: 12rem;
+  }
+  .coeur-vide {
+    position: relative;
+    bottom: 2.5rem;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 480px) {
   body {
     width: 100%;
   }
