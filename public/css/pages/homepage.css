@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .top,
 .menu__block,
 .btn,
@@ -65,14 +71,14 @@ footer {
   font-weight: bold;
 }
 
-.menu__carte:hover .check {
+.menu__carte:active .check {
   display: block;
   content: "";
-  animation: check 400ms ease-in-out;
+  animation: check 200ms ease-in-out;
 }
 
-.menu__carte:hover .price {
-  animation: check 300ms ease-in-out;
+.menu__carte:active .price {
+  animation: check 100ms ease-in-out;
 }
 
 @keyframes check {
@@ -83,7 +89,7 @@ footer {
     transform: translateX(0px);
   }
 }
-.menu__carte:hover .fa-check-circle {
+.menu__carte:active .fa-check-circle {
   content: "";
   font-size: 25px;
   color: #fff;
@@ -93,7 +99,7 @@ footer {
 
 @keyframes rotate {
   from {
-    transform: rotate(-180deg);
+    transform: rotate(-130deg);
   }
   to {
     transform: rotate(360deg);
