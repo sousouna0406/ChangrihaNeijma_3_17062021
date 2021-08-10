@@ -199,8 +199,9 @@ footer {
   height: 100%;
   background-color: rgb(255, 255, 255);
   position: fixed;
-  z-index: 9999;
- animation: out 3s linear forwards;
+  z-index:9999; 
+
+ animation: out 3.5s linear forwards;
 
 }
 .spinner::after{
@@ -230,19 +231,20 @@ transform: -ms-translate(-50%, -50%);
 }
 .lds-dual-ring {
   position: fixed;
-  top: 35%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  transform: -webkit-translate(-50%, -50%);
-  transform: -moz-translate(-50%, -50%);
-  transform: -ms-translate(-50%, -50%);
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   transform: -webkit-translate(-50%, -50%);
+   transform: -moz-translate(-50%, -50%);
+   transform: -ms-translate(-50%, -50%);
   width: 64px;
   height: 64px;
   margin: 8px;
   border-radius: 50%;
   border: 6px solid rgb(240, 35, 148);
-  border-color: rgb(179, 43, 179) transparent rgb(108, 4, 139) transparent;
+  border-color: rgb(177, 21, 169) transparent rgb(108, 4, 139) transparent;
   animation: lds-dual-ring 1s linear infinite;
+  margin: -32px;
 }
 @keyframes lds-dual-ring {
   0% {
