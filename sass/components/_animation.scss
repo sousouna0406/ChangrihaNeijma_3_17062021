@@ -1,8 +1,13 @@
-*, *:before, *:after {
+@import "../utils/variable";
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+/*** ANIMATIONS MENU ***/
 .top,
 .menu__block,
 .btn,
@@ -97,48 +102,156 @@ footer {
 
 .top:hover .coeur-vide {
   display: none;
-  
 }
-.top:hover  .coeur-plein{
+.top:hover .coeur-plein {
   display: block;
   content: "";
   position: relative;
   top: 26.7px;
   animation: coeur 800ms ease-in-out forwards;
-  
 }
 
 .carte__txtbottom:hover .coeur-vide {
   display: none;
-  
 }
 .carte__txtbottom:hover .coeur-plein {
   display: block;
   content: "";
-  
+
   animation: coeur 800ms linear;
 }
 @keyframes coeur {
   0% {
-    transform: scalex(1.2) scaleY(.7);
-     
+    transform: scalex(1.2) scaleY(0.7);
   }
   20% {
-    transform: scaleX(.7) scaleY(1.2);
-      
+    transform: scaleX(0.7) scaleY(1.2);
   }
-  40%{
-    transform: scaleX(1.2) scaleY(.7);
+  40% {
+    transform: scaleX(1.2) scaleY(0.7);
   }
   60% {
-    transform: scalex(.7) scaleY(1.2);
-     
+    transform: scalex(0.7) scaleY(1.2);
   }
   80% {
-    transform: scaleX(1.2) scaleY(.7);
-      
+    transform: scaleX(1.2) scaleY(0.7);
   }
-  100%{
+  100% {
     transform: scaleX(1) scaleY(1);
   }
 }
+.btn input{
+  animation: bouton 1.2s ease-in infinite;
+}
+/*** ANIMATIONS HOMEPAGE ***/
+.map:hover{
+  background-color: rgba(214, 137, 250, 0.226);
+ 
+}
+.fa-mobile-alt:hover{
+  color: $primary;
+ 
+}
+.carte {
+  animation: opacite 1.5s ease-in forwards;
+  
+}
+@keyframes opacite {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fonctionnement__menu:nth-of-type(1) {
+  animation: carte 1.5s ease-in forwards;
+  animation-delay: 0s;
+}
+.fonctionnement__menu:nth-of-type(2) {
+  animation: carte 1.5s ease-in forwards;
+  animation-delay: 0.5s;
+}
+.fonctionnement__menu:nth-of-type(3) {
+  animation: carte 1.5s ease-in forwards;
+  animation-delay: 1s;
+}
+
+.reservation__btn a{
+  animation: bouton 1.2s ease-in infinite;
+}
+
+@keyframes bouton {
+  from{
+    box-shadow: 0 0 0 15px rgba(233, 2, 241, 0.199);
+  }
+
+}
+/** loading spinner **/
+.spinner{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 9999;
+ animation: out 3s linear forwards;
+
+}
+.spinner::after{
+  display: none;
+}
+@keyframes out {
+  from{
+    
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+}
+.spinner img{
+width: 200px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+transform: -webkit-translate(-50%, -50%);
+transform: -moz-translate(-50%, -50%);
+transform: -ms-translate(-50%, -50%);
+
+}
+.lds-dual-ring {
+  position: fixed;
+  top: 35%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgb(240, 35, 148);
+  border-color: rgb(179, 43, 179) transparent rgb(108, 4, 139) transparent;
+  animation: lds-dual-ring 1s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+    
+  }
+  100% {
+    transform: rotate(360deg);
+   
+  }
+}
+
