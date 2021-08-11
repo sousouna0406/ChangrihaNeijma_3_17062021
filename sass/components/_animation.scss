@@ -135,12 +135,15 @@ footer {
     transform: scaleX(1) scaleY(1);
   }
 }
-.btn input {
-  animation: bouton 1.2s ease-in infinite;
+.btn {
+  > input {
+    animation: bouton 1.2s infinite;
+  }
+  > input:hover {
+    opacity: 0.7;
+  }
 }
-.btn:hover input {
-  opacity: 0.7;
-}
+
 /*** ANIMATIONS HOMEPAGE ***/
 .map:hover {
   background-color: rgba(214, 137, 250, 0.226);
@@ -187,11 +190,13 @@ footer {
   animation-delay: 1s;
 }
 
-.reservation__btn a {
-  animation: bouton 1.2s infinite;
-}
-.reservation__btn:hover {
-  opacity: 0.7;
+.reservation__btn {
+  > a {
+    animation: bouton 1.2s infinite;
+  }
+  > a:hover {
+    opacity: 0.7;
+  }
 }
 @keyframes bouton {
   from {
@@ -228,21 +233,14 @@ footer {
 .spinner img {
   width: 200px;
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transform: -webkit-translate(-50%, -50%);
-  transform: -moz-translate(-50%, -50%);
-  transform: -ms-translate(-50%, -50%);
+  margin: -100px;
 }
 .lds-dual-ring {
   position: fixed;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transform: -webkit-translate(-50%, -50%);
-  transform: -moz-translate(-50%, -50%);
-  transform: -ms-translate(-50%, -50%);
   width: 64px;
   height: 64px;
   margin: 8px;
@@ -250,7 +248,7 @@ footer {
   border: 6px solid rgb(240, 35, 148);
   border-color: rgb(177, 21, 169) transparent rgb(108, 4, 139) transparent;
   animation: lds-dual-ring 1s linear infinite;
-  margin: -32px;
+  margin: -27px;
 }
 @keyframes lds-dual-ring {
   0% {
