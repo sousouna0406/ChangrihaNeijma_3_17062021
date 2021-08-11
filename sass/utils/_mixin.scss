@@ -1,55 +1,51 @@
 @mixin flex-align {
   display: flex;
   align-items: center;
-  
 }
 @mixin shadow {
-    box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.1);
 }
 @mixin dimention {
-    margin: 0%;
-    width: 100%;
-   
+  margin: 0%;
+  width: 100%;
 }
 @mixin flex-column {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 @mixin flex-row {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 @mixin texte-light {
-    color: $text-light;
-    font-size: 18px;
+  color: $text-light;
+  font-size: 18px;
 }
 @mixin footer {
+  padding: 1.5rem;
+  @include dimention;
+  display: flex;
+  flex-direction: column;
+  background-color: $footer-background;
 
-    padding: 1.5rem;
-    @include dimention;
+  .footer__img img {
+    width: 110px;
+    font-family: $font-logo;
+    padding-bottom: 17px;
+  }
+  .footer__text a {
+    padding: 4px;
     display: flex;
-    flex-direction: column;
-    background-color: $footer-background;
+    flex-direction: row;
+    color: $color;
+    text-decoration: none;
+    font-size: 19px;
+  }
 
-    .footer__img img {
-      width: 110px;
-      font-family: $font-logo;
-      padding-bottom: 17px;
-    }
-    .footer__text a {
-      padding: 4px;
-      display: flex;
-      flex-direction: row;
-      color: $color;
-      text-decoration: none;
-      font-size: 19px;
-    }
-  
   .fa-utensils:before {
     padding-right: 13px;
     font-size: 14px;
@@ -59,24 +55,24 @@
     padding-right: 9px;
   }
 }
-@mixin header ($displayBack) { 
+@mixin header($displayBack) {
+  @include flex-column;
+  box-shadow: 4px 1px 1px 2px rgba(186, 186, 187, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.89);
+  .entete__logotop img {
     @include flex-column;
-    box-shadow: 4px 1px 1px 2px rgba(186, 186, 187, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.89);
-    .entete__logotop img {
-      @include flex-column;
-      width: 220px;
-      padding: 17px;
-      padding-top: 20px;
-      font-family: $font-logo;
-    }
-    #fleche{
-      display: $displayBack;
-    }
+    width: 220px;
+    padding: 17px;
+    padding-top: 20px;
+    font-family: $font-logo;
   }
+  #fleche {
+    display: $displayBack;
+  }
+}
 @mixin bouton {
   cursor: grab;
   width: auto;
@@ -87,6 +83,4 @@
   font-size: 17px;
   font-weight: 500;
   background: linear-gradient($secondary, $primary);
-  
 }
-

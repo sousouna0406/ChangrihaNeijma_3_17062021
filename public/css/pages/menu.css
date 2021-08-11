@@ -61,7 +61,7 @@ footer {
   display: none;
   align-items: center;
   justify-content: center;
-  background: #99E2D0;
+  background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 24.3px;
@@ -108,26 +108,16 @@ footer {
     transform: rotate(360deg);
   }
 }
-.top:hover .coeur-vide {
+.coeur:hover > .far {
   display: none;
 }
 
-.top:hover .coeur-plein {
+.coeur:hover > .fas {
   display: block;
   content: "";
   position: relative;
-  top: 26.7px;
+  top: 30px;
   animation: coeur 800ms ease-in-out forwards;
-}
-
-.carte__txtbottom:hover .coeur-vide {
-  display: none;
-}
-
-.carte__txtbottom:hover .coeur-plein {
-  display: block;
-  content: "";
-  animation: coeur 800ms linear;
 }
 
 @keyframes coeur {
@@ -162,9 +152,20 @@ footer {
 .map:hover {
   background-color: rgba(214, 137, 250, 0.226);
 }
+.map:hover .fas {
+  color: #9356dc;
+  opacity: 1;
+}
 
-.fa-mobile-alt:hover {
-  color: #9356DC;
+.carte__txtbottom .coeur:hover > .far {
+  display: none;
+}
+
+.carte__txtbottom .coeur:hover > .fas {
+  display: block;
+  content: "";
+  margin-top: -45px;
+  animation: coeur 800ms ease-in-out forwards;
 }
 
 .carte {
@@ -333,7 +334,7 @@ footer {
   color: white;
   font-size: 17px;
   font-weight: 500;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -405,7 +406,7 @@ main {
 .menu .menu__titre {
   margin-left: 15px;
   width: 45px;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.603);
   font-weight: 100;
@@ -493,7 +494,7 @@ main {
   padding-left: 15px;
 }
 
-.coeur-vide {
+.coeur > .far {
   display: flex;
   align-items: flex-end;
   font-size: 28px;
@@ -501,21 +502,25 @@ main {
   margin: 7px;
   padding-right: 10px;
   cursor: pointer;
+  position: relative;
+  top: 29px;
 }
 
-.coeur-plein {
+.coeur > .fas {
   display: none;
   align-items: flex-end;
   font-size: 28px;
   margin: 7px;
   padding-right: 10px;
-  background-image: linear-gradient(to top, #FF79DA, #FF79DA, #9356DC);
+  background-image: linear-gradient(to top, #ff79da, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
   cursor: pointer;
+  position: relative;
+  bottom: 5px;
 }
 
 .image {

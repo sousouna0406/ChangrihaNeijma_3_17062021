@@ -13,11 +13,11 @@
     justify-content: center;
     flex-direction: row;
     border-bottom: 4px double #a3a2a2;
-    border-top: 4px double #FF79DA;
+    border-top: 4px double #ff79da;
   }
 
   #fonctionnement {
-    border-left: 3px dotted #99E2D0;
+    border-left: 3px dotted #99e2d0;
     width: 50%;
     padding-bottom: 0%;
   }
@@ -82,11 +82,11 @@
     justify-content: center;
     flex-direction: row;
     border-bottom: 4px double #a3a2a2;
-    border-top: 4px double #FF79DA;
+    border-top: 4px double #ff79da;
   }
 
   #fonctionnement {
-    border-left: 3px dotted #99E2D0;
+    border-left: 3px dotted #99e2d0;
     width: 50%;
     padding-bottom: 0%;
   }

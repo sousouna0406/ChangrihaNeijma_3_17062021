@@ -100,26 +100,21 @@ footer {
   }
 }
 
-.top:hover .coeur-vide {
-  display: none;
+.coeur:hover {
+  > .far {
+    display: none;
+  }
 }
-.top:hover .coeur-plein {
-  display: block;
-  content: "";
-  position: relative;
-  top: 26.7px;
-  animation: coeur 800ms ease-in-out forwards;
+.coeur:hover {
+  > .fas {
+    display: block;
+    content: "";
+    position: relative;
+    top: 30px;
+    animation: coeur 800ms ease-in-out forwards;
+  }
 }
 
-.carte__txtbottom:hover .coeur-vide {
-  display: none;
-}
-.carte__txtbottom:hover .coeur-plein {
-  display: block;
-  content: "";
-
-  animation: coeur 800ms linear;
-}
 @keyframes coeur {
   0% {
     transform: scalex(1.2) scaleY(0.7);
@@ -140,24 +135,35 @@ footer {
     transform: scaleX(1) scaleY(1);
   }
 }
-.btn input{
+.btn input {
   animation: bouton 1.2s ease-in infinite;
 }
-.btn:hover input{
+.btn:hover input {
   opacity: 0.7;
 }
 /*** ANIMATIONS HOMEPAGE ***/
-.map:hover{
+.map:hover {
   background-color: rgba(214, 137, 250, 0.226);
- 
+  .fas {
+    color: $primary;
+    opacity: 1;
+  }
 }
-.fa-mobile-alt:hover{
-  color: $primary;
-    
+.carte__txtbottom .coeur:hover {
+  > .far {
+    display: none;
+  }
+}
+.carte__txtbottom .coeur:hover {
+  > .fas {
+    display: block;
+    content: "";
+    margin-top: -45px;
+    animation: coeur 800ms ease-in-out forwards;
+  }
 }
 .carte {
   animation: opacite 1.5s ease-in forwards;
-  
 }
 @keyframes opacite {
   from {
@@ -181,68 +187,62 @@ footer {
   animation-delay: 1s;
 }
 
-.reservation__btn a{
+.reservation__btn a {
   animation: bouton 1.2s infinite;
 }
 .reservation__btn:hover {
   opacity: 0.7;
-  
 }
 @keyframes bouton {
-  from{
+  from {
     box-shadow: 0 0 0 10px rgba(185, 2, 241, 0.158);
   }
-
 }
 /** loading spinner **/
-.spinner{
+.spinner {
   display: flex;
   padding: 0;
   margin: 0;
   right: 0;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255);
   position: fixed;
-  z-index:9999; 
+  z-index: 9999;
 
- animation: out 3.5s linear forwards;
-
+  animation: out 3.5s linear forwards;
 }
-.spinner::after{
+.spinner::after {
   display: none;
 }
 @keyframes out {
-  from{
-    
+  from {
     opacity: 1;
   }
   to {
     visibility: hidden;
     opacity: 0;
   }
-  
 }
-.spinner img{
-width: 200px;
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-transform: -webkit-translate(-50%, -50%);
-transform: -moz-translate(-50%, -50%);
-transform: -ms-translate(-50%, -50%);
-
+.spinner img {
+  width: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
 }
 .lds-dual-ring {
   position: fixed;
-   top: 40%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   transform: -webkit-translate(-50%, -50%);
-   transform: -moz-translate(-50%, -50%);
-   transform: -ms-translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
   width: 64px;
   height: 64px;
   margin: 8px;
@@ -255,11 +255,8 @@ transform: -ms-translate(-50%, -50%);
 @keyframes lds-dual-ring {
   0% {
     transform: rotate(0deg);
-    
   }
   100% {
     transform: rotate(360deg);
-   
   }
 }
-

@@ -6,11 +6,6 @@
   .image {
     height: 12rem;
   }
-
-  .coeur-vide {
-    position: relative;
-    bottom: 2.5rem;
-  }
 }
 @media screen and (min-width: 350px) and (max-width: 480px) {
   body {

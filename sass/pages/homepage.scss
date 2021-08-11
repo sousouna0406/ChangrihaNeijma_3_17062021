@@ -1,7 +1,5 @@
 @import "../utils/variable";
 @import "../utils/mixin";
-@import "../utils/fonction";
-@import "../utils/placeholder";
 @import "../components/animation";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
@@ -77,7 +75,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem;
+    padding: 15px;
+    padding-right: 17px;
+    padding-left: 14px;
     @include texte-light;
   }
 }
@@ -91,30 +91,30 @@
   color: rgba(0, 0, 0, 0.719);
 }
 
-.coeur-plein  {
-
-
-  display: none;
-  align-items: flex-end;
-  font-size: 26.6px;
-  margin: 7px;
-  background-image: linear-gradient(to top, $secondary, $secondary, $primary);
-  -webkit-background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.coeur-vide {
-  display: flex;
-  align-items: flex-end;
-  font-size: 28px;
-  color: $text-light;
-  margin: 7px;
-
-  
+.coeur {
+  > .fas {
+    display: none;
+    content: "";
+    font-size: 26.6px;
+    margin: 7px;
+    background-image: linear-gradient(to top, $secondary, $secondary, $primary);
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
+.coeur {
+  > .far {
+    display: flex;
+    align-items: flex-end;
+    font-size: 28px;
+    color: $text-light;
+    margin: 7px;
+  }
+}
 
 #restaurant {
   background-color: $background-color;
@@ -125,15 +125,13 @@
   @include flex-column;
   padding-right: 10px;
   padding-bottom: 40px;
-  
 
   .fonctionnement__titre {
     width: 100%;
     padding: 20px;
     font-size: 25px;
     margin-top: 20px;
-    padding-bottom: 30px; 
-   
+    padding-bottom: 30px;
   }
   .fonctionnement__menu {
     @include flex-row;
@@ -159,7 +157,11 @@
   padding-bottom: 20px;
   padding-right: 15px;
   cursor: grab;
+  > .fas {
+    opacity: 0.4;
+  }
 }
+
 .numbers {
   @include flex-row;
   background-color: $primary;
@@ -173,21 +175,20 @@
 .fa-store:before {
   content: "\f54e";
   font-size: 20px;
-  color: $text-light;
+
   padding-right: 25px;
   padding-left: 40px;
 }
 .fa-list-ul:before {
   content: "\f0ca";
   font-size: 20px;
-  color: $text-light;
+
   padding-right: 25px;
   padding-left: 40px;
 }
 .fa-mobile-alt:before {
   content: "\f3cd";
   font-size: 22px;
-  color: $text-light;
   padding-right: 25px;
   padding-left: 40px;
 }

@@ -19,13 +19,13 @@
   #fonctionnement {
     border-left: 3px dotted $tertiary;
     width: 50%;
-   padding-bottom: 0%;
-   .fonctionnement__titre {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%
-  }
+    padding-bottom: 0%;
+    .fonctionnement__titre {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
     .menu__liste-puce {
       padding-right: 0%;
     }
@@ -85,7 +85,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%
+      width: 100%;
     }
     .menu__liste-puce {
       padding-right: 0%;

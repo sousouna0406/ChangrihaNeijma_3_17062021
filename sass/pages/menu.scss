@@ -1,7 +1,5 @@
 @import "../utils/variable";
 @import "../utils/mixin";
-@import "../utils/fonction";
-@import "../utils/placeholder";
 @import "../components/animation";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
@@ -150,30 +148,38 @@ main {
     padding-left: 15px;
   }
 }
-.coeur-vide {
-  display: flex;
-  align-items: flex-end;
-  font-size: 28px;
-  color: $text-light;
-  margin: 7px;
-  padding-right: 10px;
-  cursor: pointer;
- 
+.coeur {
+  > .far {
+    display: flex;
+    align-items: flex-end;
+    font-size: 28px;
+    color: $text-light;
+    margin: 7px;
+    padding-right: 10px;
+    cursor: pointer;
+
+    position: relative;
+    top: 29px;
+  }
 }
 
-.coeur-plein {
-  display: none;
-  align-items: flex-end;
-  font-size: 28px;
-  margin: 7px;
-  padding-right: 10px;
-  background-image: linear-gradient(to top, $secondary, $secondary, $primary);
-  -webkit-background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  cursor: pointer;
+.coeur {
+  > .fas {
+    display: none;
+    align-items: flex-end;
+    font-size: 28px;
+    margin: 7px;
+    padding-right: 10px;
+    background-image: linear-gradient(to top, $secondary, $secondary, $primary);
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+  }
 }
 
 .image {
