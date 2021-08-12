@@ -398,9 +398,8 @@ footer {
   font-size: 26.6px;
   margin: 7px;
   background-image: linear-gradient(to top, #ff79da, #ff79da, #9356dc);
+  background-clip: content-box;
   -webkit-background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
   color: transparent;
 }
 

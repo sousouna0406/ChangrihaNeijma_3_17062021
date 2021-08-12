@@ -504,9 +504,8 @@ main {
   margin: 7px;
   padding-right: 10px;
   background-image: linear-gradient(to top, #ff79da, #ff79da, #9356dc);
+  background-clip: content-box;
   -webkit-background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
   color: transparent;
   cursor: pointer;
   position: relative;
