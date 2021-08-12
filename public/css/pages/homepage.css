@@ -253,7 +253,7 @@ footer {
   border: 6px solid #f02394;
   border-color: #b115a9 transparent #6c048b transparent;
   animation: lds-dual-ring 1s linear infinite;
-  margin: -27px;
+  margin: -32px;
 }
 
 @keyframes lds-dual-ring {
